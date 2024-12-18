@@ -278,6 +278,27 @@ main {
   user-select: none;
 }
 
+.history-container {
+  margin-top: 20px;
+}
+.history-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+.history-image img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+.history-details {
+  flex-grow: 1;
+}
+.history-details p {
+  margin: 0 0 5px;
+}
+
 #result .response-message {
   margin-block-end: 16px;
 

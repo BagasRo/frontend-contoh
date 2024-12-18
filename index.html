@@ -49,27 +49,26 @@
             <div class="section-title">
               <h3>Mari Cek Kesehatan Tanamanmu</h3>
             </div>
-      
+          
             <div class="predict-container">
-              <form id="predictForm" class="predict-form" enctype="multipart/form-data">
+              <form id="predictForm" class="predict-form" enctype="multipart/form-data" onsubmit="event.preventDefault(); submitPrediction();">
                 <div id="dropArea">
                   <p>
-                    Silakan klik tombol "Select your picture" atau drag & drop berkas Anda
-                    untuk memilih gambar.
+                    Silakan klik tombol "Select your picture" atau drag & drop berkas Anda untuk memilih gambar.
                   </p>
                   <input type="file" id="skinFile" name="skin" accept="image/*" />
                   <label class="btn" id="skinFileLabel" for="skinFile">
                     Select your picture
                   </label>
-      
+          
                   <div id="previewImg"></div>
                 </div>
-      
+          
                 <div class="submit-form">
-                  <button class="btn" value="predict">Predict</button>
+                  <button class="btn" type="submit">Predict</button>
                 </div>
               </form>
-      
+          
               <div class="result-container">
                 <div id="waitingToPredicting">
                   <img src="src/images/waiting.svg" alt="Waiting to predicting" />
@@ -84,6 +83,7 @@
               </div>
             </div>
           </section>
+          
       
           <!-- History Section -->
           <section>
